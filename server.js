@@ -15,7 +15,7 @@ app.get('/api/basic-info', (req, res) => {
   res.status(200).json({
   'email': 'preciousidubor@gmail.com',
   'current_datetime': `${date.toISOString()}`,
-  'github_url': '<https://github.com/pd-idubor/HNG12/tree/master/0-stage>'
+  'github_url': '<https://github.com/pd-idubor/HNG12>'
 });
 });
 
