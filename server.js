@@ -6,15 +6,10 @@ const PORT = 5000;
 
 app.use(cors());
 
-app.get('/', (req, res) => {
-  res.send('Hello HNG');
-});
-
 app.get('/api/basic-info', (req, res) => {
-  const date = new Date();
   res.status(200).json({
   'email': 'preciousidubor@gmail.com',
-  'current_datetime': `${date.toISOString()}`,
+  'current_datetime': `${new Date().toISOString()}`,
   'github_url': '<https://github.com/pd-idubor/HNG12>'
 });
 });
